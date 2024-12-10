@@ -1,0 +1,379 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Member Profiles</title>
+  <style>
+    /* Basic Styling - Customize to your liking */
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+      grid-gap: 20px;
+    }
+    .profile-card {
+      border: 1px solid #ddd;
+      padding: 20px;
+      text-align: center;
+    }
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%; 
+      object-fit: cover; /* Ensures images fit nicely in the circle */
+    }
+    .social-icons a {
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+
+    <div class="profile-card">
+      <img src="path/to/profile-image.jpg" alt="Profile Picture" class="profile-picture">
+      <h2>Freddie J. Plourde</h2>
+      <p>@Founder | <a href="#">websitename.com</a></p>
+      <div class="social-icons">
+        <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+        <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+        <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+      </div>
+      <button>Message Now</button>
+      <p><strong>Wallets:</strong> 2563</p>
+      <p><strong>Income:</strong> 6952</p>
+      <p><strong>Transactions:</strong> 1125</p>
+    </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="profile-card">
+          <img src="path/to/profile-image.jpg" alt="Profile Picture" class="profile-picture">
+          <h2>Freddie J. Plourde</h2>
+          <p>@Founder | <a href="#">websitename.com</a></p>
+          <div class="social-icons">
+            <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+            <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+            <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+          </div>
+          <button>Message Now</button>
+          <p><strong>Wallets:</strong> 2563</p>
+          <p><strong>Income:</strong> 6952</p>
+          <p><strong>Transactions:</strong> 1125</p>
+        </div>
+        </div>
+
+
+
+
+
+        <div class="container">
+
+            <div class="profile-card">
+              <img src="path/to/profile-image.jpg" alt="Profile Picture" class="profile-picture">
+              <h2>Freddie J. Plourde</h2>
+              <p>@Founder | <a href="#">websitename.com</a></p>
+              <div class="social-icons">
+                <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+                <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+                <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+              </div>
+              <button>Message Now</button>
+              <p><strong>Wallets:</strong> 2563</p>
+              <p><strong>Income:</strong> 6952</p>
+              <p><strong>Transactions:</strong> 1125</p>
+            </div>
+            </div>
+
+
+
+
+
+            <div class="container">
+
+                <div class="profile-card">
+                  <img src="path/to/profile-image.jpg" alt="Profile Picture" class="profile-picture">
+                  <h2>Freddie J. Plourde</h2>
+                  <p>@Founder | <a href="#">websitename.com</a></p>
+                  <div class="social-icons">
+                    <a href="#"><img src="path/to/twitter-icon.png" alt="Twitter"></a>
+                    <a href="#"><img src="path/to/facebook-icon.png" alt="Facebook"></a>
+                    <a href="#"><img src="path/to/instagram-icon.png" alt="Instagram"></a>
+                  </div>
+                  <button>Message Now</button>
+                  <p><strong>Wallets:</strong> 2563</p>
+                  <p><strong>Income:</strong> 6952</p>
+                  <p><strong>Transactions:</strong> 1125</p>
+                </div>
+                </div>
+ </body>
+</html> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Member Profiles</title>
+  <link rel="stylesheet" href="resources\styles\bootstrap.min.css">
+  <link rel="stylesheet" href="resources\styles\bootstrap1.min.css">
+  <link rel="stylesheet" href="resources\styles\all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    /* Custom styling */
+    .profile-picture {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .social-icons a {
+      margin: 0 5px;
+      font-size: 18px; /* Increased icon size */
+    }
+    .card {
+      margin-bottom: 20px; /* Added space between cards */
+      /* display: flex;
+      flex-direction: column;
+      align-items: center; */
+    }
+
+
+    .card-title, .card-text, .social-icons, .btn-primary{ /* Replace .card-title and .card-text with your actual classes */
+          text-align: center;
+    }
+    a[href="#"] {
+      color: rgb(232, 65, 93);
+    }
+
+
+    .btn {
+  border-radius: 30px; /* Add a border radius to the button */
+  margin: 20px 0; /* Add a gap of 20px above and below the button */
+  display: block; /* Make the button a block element to center it */
+  margin-left: auto; /* Center the button horizontally */
+  margin-right: auto; /* Center the button horizontally */
+}
+
+
+@media (max-width: 1200px) {
+  .center-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .center-content > .card-body {
+    margin-bottom: 20px; /* Adjust spacing as needed */
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container mt-6">
+    <div class="row" id="memberProfiles">
+        <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\Finance-Technology-Optimization-in-2020-1.jpg" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Freddie J. Plourde</h5>
+            <p class="card-text">@Founder | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\istockphoto-459098365-612x612.jpg" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Julie L. Arsenault</h5>
+            <p class="card-text">@Programmer | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\istockphoto-640152090-612x612.jpg" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Christopher Gallardo</h5>
+            <p class="card-text">@Programmer | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+       
+
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\istockphoto-1447712266-612x612.webp" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title"> Noureen L. Arsenault</h5>
+            <p class="card-text">@Webdesigner | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\istockphoto-1453022884-612x612.webp" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Joeseph M. Rohr</h5>
+            <p class="card-text">@Manager | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-md-4">
+        <div class="card" >
+          <img src="resources\assets\iamges\istockphoto-1480600301-612x612.webp" alt="Profile Picture" class="profile-picture mx-auto d-block mt-3">
+          <div class="card-body">
+            <h5 class="card-title">Malak K. Horne</h5>
+            <p class="card-text">@Director | <a href="#">websitename.com</a></p>
+            <div class="social-icons">
+              <a href="#"><img src="resources\assets\iamges\twitter.png" alt="Twitter"></a>
+              <a href="#"><img src="resources\assets\iamges\facebook.png" alt="Facebook"></a>
+              <a href="#"><img src="resources\assets\iamges\instegram.png" alt="Instagram"></a>
+            </div>
+            <button class="btn btn-primary">Message Now</button>
+            <div class="card-body center-content d-flex justify-content-center" >
+                <div class="card-body">
+                    <h3 class="card-title">2563</h3>
+                    <p class="card-text">Wallets <br> Balance</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">6952</h3>
+                    <p class="card-text">Income <br> Amounts</p>
+                  </div>
+                  <div class="card-body">
+                    <h3 class="card-title">1125</h3>
+                    <p class="card-text">Total <br> Transactions</p>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+        </div>
+          
+        
+        <script src="resources\scripts\jquery-3.5.1.slim.min.js"></script>
+  <script src="resources\scripts\popper1.min.js"></script>
+ 
+        </body>
+        </html>
